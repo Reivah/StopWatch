@@ -1,0 +1,249 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+body {
+	height: 110vh;
+	font-family: 'Roboto', sans-serif;
+	background-color: #1b1a1a;
+	color: #892cdc;
+}
+
+.wrapper {
+	position: relative;
+	margin: 0px auto;
+	width: 100%;
+	max-width: 1200px;
+}
+
+.title-text {
+	margin-top: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.title-text h1 {
+	margin-bottom: 30px;
+	font-size: 60px;
+	color: #BC6FF1;
+}
+
+
+.techonolgies {
+	width: 100%;
+	text-align: center;
+}
+
+.techonolgies button {
+	padding: 10px 20px;
+	margin: 20px 30px;
+	width: 130px;
+	font-size: 20px;
+	border: none;
+	border-radius: 15px;
+	text-align: center;
+	background-color: #892cdc;
+	color: #fff;
+}
+
+.welcome-text {
+	margin: 10px;
+	font-size: 28px;
+}
+
+.stopwatch-panel {
+    position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: top;
+	align-items: center;
+	margin: 50px auto;
+	height: 600px;
+	width: 400px;
+	border: 2px solid #bc6ff1;
+	border-radius: 25px;
+}
+
+.timer-circle {
+    position: relative;
+    margin: 50px;
+    height: 250px;
+    width: 250px;
+    border: 7px solid #BC6FF1;
+    border-radius: 50%;
+}
+
+.timer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 45px;
+}
+
+.info-box {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+
+.info {
+    padding: 6px 13px;
+    font-size: 18px;
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #bc6ff1;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: color .3s, border-color .3s;
+}
+
+.info:hover {
+    color: #bc6ff1;
+    border-color: #fff;
+}
+
+.info-panel {
+    position: absolute;
+    top: 50%;
+    left: -50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    height: 250px;
+    background-color: #52057B;
+    color: #fff;
+    border-radius: 25px;
+    transition: left .3s;
+    z-index: 10;
+}
+
+.info-title {
+    margin: 15px;
+    font-size: 28px;
+    text-align: center;
+}
+
+.info-panel .fa-solid {
+    font-size: 20px;
+}
+
+.btn-info {
+    margin-left: 25px;
+    margin-bottom: 10px;
+    
+}
+
+span.record-info {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.history-text {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.buttons-panel {
+    display: flex;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    width: 100%;
+    
+}
+
+.buttons-panel button {
+    padding: 10px 15px;
+    margin: 15px;
+    width: 100px;
+    font-size: 24px;
+    border-radius: 15px;
+    color: #fff;
+    background-color: #892cdc;
+    border: none;
+    transition: color .3s, background-color .3s;
+    opacity: 0;
+    transition: opacity .5s;
+    cursor: pointer;
+}
+
+
+
+.buttons-panel button:hover {
+    color: #892cdc;
+    background-color: #fff;
+}
+
+.buttons-panel .play-btn {
+    opacity: 1;
+}
+
+.buttons-panel .record-btn {
+    width: 400px;
+    text-transform: uppercase;
+}
+
+.show {
+    visibility: visible;
+}
+
+.record-panel {
+    padding: 30px 60px;
+    position: absolute;
+    top: 50%;
+    left: -50%;
+    transform: translate(-50%, -50%);
+    width: 320px;
+    background-color: #52057B;
+    color: #fff;
+    border-radius: 25px;
+    z-index: 10;
+    transition: left .4s;
+}
+
+.record-title {
+    margin-bottom: 20px;
+    font-size: 28px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.record-list{
+    font-size: 18px;
+    list-style: none;
+    text-align: center;
+}
+
+.record-list li{
+    margin-bottom: 10px;
+}
+
+.close-btn {
+    padding: 7px 10px;
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    font-size: 19px;
+    color: #fff;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform .3s;
+}
+
+.close-btn:hover {
+    transform: scale(1.4);
+}
+
+.shadow-bg {
+	position: absolute;
+	top: 0;
+	left: -110%;
+	height: 120%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.363);
+	z-index: 5;
+    transition: left .3s
+}

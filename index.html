@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StopWatch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/96270d5280.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="title-text">
+            <h1>StopWatch</h1>
+            <div class="techonolgies">
+                <button class="html"><i class="fa-solid fa-tag"></i> HTML</button>
+                <button class="css"><i class="fa-solid fa-tag"></i> CSS</button>
+                <button class="js"><i class="fa-solid fa-tag"></i> JS</button>
+            </div>
+            <p class="welcome-text"></p>
+            <p class="welcome-text two"></p>
+        </div>
+        <div class="stopwatch-panel">
+            <div class="info-box">
+                <button class="info"><i class="fa-solid fa-info"></i></button>
+            </div>
+            <div class="timer-circle">
+                <p class="timer">00:00:00</p>
+            </div>
+            <p class="history-text"></p>
+            <div class="buttons-panel">
+                <button class="stop-btn" ><i class="fa-solid fa-stop"></i></button>
+                <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+                <button class="reset-btn"><i class="fa-solid fa-x"></i></button>
+                <button class="record-btn">Records</button>
+            </div>
+        </div>
+        <div class="record-panel">
+            <h2 class="record-title">Records</h2>
+            <ul class="record-list">
+            </ul>
+            <button class="close-btn"><i class="fa-solid fa-x"></i></button>
+        </div>
+        <div class="info-panel">
+            <h2 class="info-title">Instruction</h2>
+            <p class="btn-info"><i class="fa-solid fa-play"></i> - Play button, starting the time</p>
+            <p class="btn-info"><i class="fa-solid fa-pause"></i> - Pause button, pausing the time</p>
+            <p class="btn-info"><i class="fa-solid fa-stop"></i> - Stop button, clearing and saving the time</p>
+            <p class="btn-info"><i class="fa-solid fa-x"></i> - Reset button, remove all recorded time in "Record" tab</p>
+            <p class="btn-info"> <span class="record-info">Records</span> - Show all recorded time "Records"</p>
+            <button class="close-btn info-btn"><i class="fa-solid fa-x"></i></button>
+        </div>
+    </div>
+    <div class="shadow-bg"></div>
+
+
+
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
